@@ -48,21 +48,21 @@ Write a C program to read A values and check whether A is positive number or not
 # PROGRAM:
 
 ```
+
 #include <stdio.h>
+
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    if (a>=0)
-    {
-        printf("Number is positive.");
-    }
-    else
-    {
-        printf("Number is negative.");
-    }
+    int a, b;
+    scanf("%d%d", &a, &b);
+
+    
+    (a < b) ? printf("Minimum between %d and %d is %d", a, b, a)
+            : printf("Minimum between %d and %d is %d", a, b, b);
+
     return 0;
 }
+
 
 ```
 # OUTPUT:
