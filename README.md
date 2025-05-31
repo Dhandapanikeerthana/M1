@@ -50,17 +50,19 @@ Write a C program to read A values and check whether A is positive number or not
 ```
 
 #include <stdio.h>
-
 int main()
 {
-    int a, b;
-    scanf("%d%d", &a, &b);
-
-    
-    (a < b) ? printf("Minimum between %d and %d is %d", a, b, a)
-            : printf("Minimum between %d and %d is %d", a, b, b);
-
-    return 0;
+int n;
+scanf("%d",&n);
+if (n>=0)
+{
+printf("Number is positive.");
+}
+else
+{
+printf("Number is negative.");
+}
+return 0;
 }
 
 
@@ -89,18 +91,16 @@ Write a program to find minimum between two fraction numbers using conditional o
 ## PROGRAM:
 ```
 #include <stdio.h>
+
 int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    if (a<b)
-    {
-        printf("Minimum between %d and %d is %d",a,b,a);
-    }
-    else
-    {
-        printf("Minimum between %d and %d is %d",a,b,b);
-    }
+    int a, b;
+    scanf("%d%d", &a, &b);
+
+    
+    (a < b) ? printf("Minimum between %d and %d is %d", a, b, a)
+            : printf("Minimum between %d and %d is %d", a, b, b);
+
     return 0;
 }
 ```
