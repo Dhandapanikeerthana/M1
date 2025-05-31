@@ -179,31 +179,29 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 ## PROGRAM:
 ```
 #include <stdio.h>
-#include <string.h>
-
 int main()
 {
-    int phy,che,ca,total;
-    float per;
-    char div[10];
-
-   
-    scanf("%d%d%d",&phy,&che,&ca);
-    total = phy+che+ca;
-    per = total/3.0;
-    if (per>=60)
-	 strcpy(div,"First");
-    else if (per<60&&per>=48)
-	    strcpy(div,"Second");
-	else
-	    if (per<48&&per>=36)
-		strcpy(div,"Pass");
-	     else
-		strcpy(div,"Fail");
-
-      
-       printf("Total Marks = %d\nPercentage = %5.2f\nDivision = %s\n",total,per,div);
-       return 0;
+int m1, m2, m3;
+float total ,percentage;
+printf("Enter marks of three subjects:\n");
+scanf("%d %d %d", &m1, &m2, &m3);
+total = m1 + m2 + m3;
+percentage = total / 3;
+printf("Total Marks = %d\n", total);
+printf("Percentage = %.2f%%\n", percentage);
+if (total>=40)
+{
+if(percentage>=60)
+printf("Division = First\n");
+The program successfully takes three subject marks, calculates the total and percentage,
+and correctly determines the division based on predefined grading logic.
+else if(percentage>=48 && percentage<60)
+printf("Division = Second\n");
+else if(percentage>=36 && percentage<48)
+printf("Division = Pass\n");
+else
+printf("Division = Fail\n");
+return 0;
 }
 ```
 
